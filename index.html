@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SentinelEthos Tech | Ciberseguridad & Monitoreo Ético</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head> 
+<body>
+
+    <!-- NAVBAR GLASSMORPHISM -->
+    <nav class="navbar navbar-expand-lg fixed-top glass-nav">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4 nav-link-custom" href="#inicio"><i class="fa-solid fa-shield-halved text-accent me-2"></i>SentinelEthos</a>
+            <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link nav-link-custom" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom" href="#precios">Precios Justos</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom" href="#privacidad">Política y Datos</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom" href="#compromiso">Nuestro Compromiso Ético</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom" href="#acerca-de">Acerca de Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom" href="#contacto-page">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link btn-accent-sm ms-lg-3 mt-2 mt-lg-0" href="#demoModal" data-bs-toggle="modal">Probar Simulación</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- VISTA 1: PÁGINA PRINCIPAL / LANDING PAGE -->
+    <div id="main-content" class="view-section">
+        <!-- HERO SECTION CON PARALLAX -->
+        <section id="inicio" class="hero-section text-center parallax-bg">
+            <div class="container">
+                <div class="glass-card hero-glass-box mx-auto p-4 p-md-5">
+                    <span class="badge badge-ethic mb-3 px-3 py-2">Ciberseguridad Respetuosa con el Trabajador</span>
+                    <h1 class="display-4 fw-bold text-white mb-3">Protección de Red Avanzada sin Invasión a la Privacidad</h1>
+                    <p class="lead col-md-10 mx-auto mb-4">Garantizamos la seguridad perimetral corporativa de equipos remotos sin recurrir a vigilancia masiva, spyware ni vulneración de la intimidad personal.</p>
+                    <div class="d-flex justify-content-center gap-3 flex-wrap">
+                        <a href="#servicios" class="btn btn-accent btn-lg nav-link-custom">Explorar Soluciones</a>
+                        <a href="#demoModal" class="btn btn-outline-light btn-lg" data-bs-toggle="modal">Simular Monitoreo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE SERVICIOS -->
+        <section id="servicios" class="py-5">
+            <div class="container">
+                <h2 class="text-white text-center mb-2"><span class="text-accent">01.</span> Soluciones Disruptivas</h2>
+                <p class="text-center text-muted col-md-8 mx-auto mb-5">Modelos de arquitectura de ciberseguridad adaptados a entornos híbridos de alto rendimiento, protegiendo los activos digitales estratégicos sin vulnerar los derechos fundamentales de la fuerza laboral.</p>
+
+                <div class="row g-4 mb-5">
+                    <div class="col-md-4">
+                        <div class="card card-custom glass-card h-100 p-4">
+                            <div class="fs-1 text-accent mb-3"><i class="fa-solid fa-network-wired"></i></div>
+                            <h4 class="text-white">Sentinel NetShield</h4>
+                            <p>Detección de amenazas en tiempo real y cifrado end-to-end. Protege la red perimetral aislando el tráfico malicioso sin analizar archivos o comunicaciones privadas.</p>
+                            <hr class="border-secondary my-3">
+                            <ul class="list-unstyled small text-light mb-0">
+                                <li class="mb-2"><i class="fa-solid fa-angle-right text-accent me-2"></i><strong>Filtro DPI Ético:</strong> Inspección de cabeceras de paquetes sin desempaquetar contenido sensible.</li>
+                                <li class="mb-2"><i class="fa-solid fa-angle-right text-accent me-2"></i><strong>Aislamiento Zero-Trust:</strong> Bloqueo automatizado de IPs y puertos sospechosos a nivel de gateway.</li>
+                                <li><i class="fa-solid fa-angle-right text-accent me-2"></i><strong>Cifrado TLS 1.3:</strong> Canal seguro de transporte para el 100% del tráfico corporativo.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-custom glass-card h-100 p-4">
+                            <div class="fs-1 text-accent mb-3"><i class="fa-solid fa-chart-line"></i></div>
+                            <h4 class="text-white">Sentinel Flow Metric</h4>
+                            <p>Medición objetiva de rendimiento basada en disponibilidad del servicio, consumo de ancho de banda y entrega de metas. Cero keyloggers o toma de capturas de pantalla.</p>
+                            <hr class="border-secondary my-3">
+                            <ul class="list-unstyled small text-light mb-0">
+                                <li class="mb-2"><i class="fa-solid fa-angle-right text-accent me-2"></i><strong>Métricas de Latencia y SLA:</strong> Evaluación de estabilidad de red y conectividad de aplicaciones.</li>
+                                <li class="mb-2"><i class="fa-solid fa-angle-right text-accent me-2"></i><strong>Cero Invasión UI:</strong> Algoritmo enfocado exclusivamente en flujo de datos, omitiendo la pantalla.</li>
+                                <li><i class="fa-solid fa-angle-right text-accent me-2"></i><strong>Gestión por Entregables:</strong> Correlación entre uptime técnico y objetivos de desarrollo.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-custom glass-card h-100 p-4">
+                            <div class="fs-1 text-accent mb-3"><i class="fa-solid fa-user-shield"></i></div>
+                            <h4 class="text-white">Audit-Log Ético</h4>
+                            <p>Portal transparente donde los colaboradores pueden consultar directamente qué telemetría exacta de red se recopila de sus nodos corporativos en horario laboral.</p>
+                            <hr class="border-secondary my-3">
+                            <ul class="list-unstyled small text-light mb-0">
+                                <li class="mb-2"><i class="fa-solid fa-angle-right text-accent me-2"></i><strong>Visibilidad Bilateral:</strong> Acceso idéntico a registros para administradores y empleados.</li>
+                                <li class="mb-2"><i class="fa-solid fa-angle-right text-accent me-2"></i><strong>Solicitud de Aclaración:</strong> Proceso integrado para disputar falsos positivos en tiempo real.</li>
+                                <li><i class="fa-solid fa-angle-right text-accent me-2"></i><strong>Histórico Cifrado:</strong> Trazabilidad inalterable mediante hash criptográfico de eventos.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-4 p-md-5">
+                    <h4 class="text-accent mb-4 text-center"><i class="fa-solid fa-cubes me-2"></i>Servicios Complementarios de Protección Perimetral</h4>
+                    <div class="row g-4 text-light small">
+                        <div class="col-md-6 border-end border-secondary pe-md-4">
+                            <h5 class="text-white mb-2"><i class="fa-solid fa-shield-virus text-accent me-2"></i>Sentinel Perimeter DLP</h5>
+                            <p>Prevención de fuga de datos centrada en la detección de exfiltración masiva mediante protocolos FTP/HTTP inusuales. Opera sin realizar escaneo intrusivo de carpetas personales ni carpetas locales fuera del Sandbox corporativo.</p>
+                        </div>
+                        <div class="col-md-6 ps-md-4">
+                            <h5 class="text-white mb-2"><i class="fa-solid fa-key text-accent me-2"></i>Gestión de Identidad PAM Cero-Rastro</h5>
+                            <p>Gestión de accesos privileged que autoriza elevación de credenciales para tareas de administración de red sin almacenar archivos temporales ni credenciales personales en memoria local.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CALCULADORA DE PRECIOS ESTRUCTURADOS -->
+        <section id="precios" class="py-5 bg-secondary-dark parallax-bg">
+            <div class="container">
+                <h2 class="text-white text-center mb-2"><span class="text-accent">02.</span> Modelo de Precios & Calculadora Transparente</h2>
+                <p class="text-center mb-5">Justicia Conmutativa: Tarifas basadas en el costo real de operación + margen regulado (Máximo 25%). Sin cláusulas ocultas.</p>
+                
+                <div class="row g-4 justify-content-center mb-5">
+                    <div class="col-md-5">
+                        <div class="card card-custom glass-card p-4 text-center h-100 d-flex flex-column justify-content-between">
+                            <div>
+                                <h3 class="text-white">Tier Startup</h3>
+                                <p class="fs-2 fw-bold text-accent">$12 <small class="fs-6 text-white">USD / usuario / mes</small></p>
+                                <p class="text-muted small mb-4">Diseñado para PyMEs y equipos de desarrollo emergentes que buscan seguridad perimetral sólida sin costos de licenciamiento inflados.</p>
+                                <ul class="list-unstyled mb-4 text-start">
+                                    <li class="mb-2"><i class="fa-solid fa-check text-accent me-2"></i>SLA Garantizado: 99.5% disponibilidad</li>
+                                    <li class="mb-2"><i class="fa-solid fa-check text-accent me-2"></i>Monitoreo de red en horario laboral</li>
+                                    <li class="mb-2"><i class="fa-solid fa-check text-accent me-2"></i>Consola de transparencia para el empleado</li>
+                                    <li class="mb-2"><i class="fa-solid fa-check text-accent me-2"></i>Cancelación libre sin penalización contractual</li>
+                                    <li class="mb-2"><i class="fa-solid fa-check text-accent me-2"></i>Soporte estándar por ticket (Respuesta < 4h)</li>
+                                    <li><i class="fa-solid fa-check text-accent me-2"></i>Reportes de auditoría semanales exportables</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="card card-custom glass-card p-4 border-accent text-center h-100 d-flex flex-column justify-content-between">
+                            <div>
+                                <h3 class="text-white">Tier Enterprise</h3>
+                                <p class="fs-2 fw-bold text-accent">$25 <small class="fs-6 text-white">USD / usuario / mes</small></p>
+                                <p class="text-muted small mb-4">Arquitectura robusta para corporativos con infraestructuras multinivel que exigen garantías de SLA contractuales y monitoreo ético en masa.</p>
+                                <ul class="list-unstyled mb-4 text-start">
+                                    <li class="mb-2"><i class="fa-solid fa-check text-accent me-2"></i>SLA Garantizado: 99.9% con reembolso automático</li>
+                                    <li class="mb-2"><i class="fa-solid fa-check text-accent me-2"></i>Prevención de fugas de datos (DLP) avanzada</li>
+                                    <li class="mb-2"><i class="fa-solid fa-check text-accent me-2"></i>Auditorías externas de seguridad semestrales</li>
+                                    <li class="mb-2"><i class="fa-solid fa-check text-accent me-2"></i>Soporte ético técnico 24/7 dedicado</li>
+                                    <li class="mb-2"><i class="fa-solid fa-check text-accent me-2"></i>Integración SIEM/SOAR mediante API REST</li>
+                                    <li><i class="fa-solid fa-check text-accent me-2"></i>Despliegue de nodos dedicados en la nube</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-4 mb-5 max-w-800 mx-auto">
+                    <h4 class="text-accent mb-3 text-center"><i class="fa-solid fa-scale-balanced me-2"></i>Comparativa de Costo de Mercado vs. Modelo Ético</h4>
+                    <div class="table-responsive">
+                        <table class="table table-dark table-borderless align-middle mb-0 text-light small">
+                            <thead>
+                                <tr class="border-bottom border-secondary text-accent">
+                                    <th>Concepto</th>
+                                    <th>Monitoreo Tradicional</th>
+                                    <th>SentinelEthos Tech</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Margen de Ganancia</td>
+                                    <td class="text-danger">150% - 300% (Especulativo)</td>
+                                    <td class="text-success">17% Regulado (Justicia Conmutativa)</td>
+                                </tr>
+                                <tr>
+                                    <td>Privacidad del Empleado</td>
+                                    <td class="text-danger">Captura de pantalla / Keyloggers</td>
+                                    <td class="text-success">Veto Arquitectónico / Cero Invasión</td>
+                                </tr>
+                                <tr>
+                                    <td>Permanencia Contractual</td>
+                                    <td class="text-danger">Plazos forzosos a 12/24 meses</td>
+                                    <td class="text-success">Cancelación mensual libre de multas</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card card-custom glass-card p-4 max-w-800 mx-auto">
+                    <h4 class="text-accent mb-3 text-center"><i class="fa-solid fa-calculator me-2"></i>Calculadora Interactiva de Desglose Ético</h4>
+                    <div class="row align-items-center">
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <label for="userSlider" class="form-label text-white">Número de Usuarios Remotos: <strong id="userCountDisplay" class="text-accent">25</strong></label>
+                            <input type="range" class="form-range" min="5" max="500" step="5" value="25" id="userSlider">
+                            
+                            <label for="tierSelect" class="form-label text-white mt-3">Plan Seleccionado:</label>
+                            <select class="form-select bg-dark text-white border-secondary" id="tierSelect">
+                                <option value="12">Tier Startup ($12 / usuario)</option>
+                                <option value="25">Tier Enterprise ($25 / usuario)</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="audit-console glass-console">
+                                <p class="text-accent fw-bold mb-2">// Desglose Transparente Mensual:</p>
+                                <p class="mb-1">Infraestructura y Nube (43%): <span id="infraCost" class="text-white">$0.00</span></p>
+                                <p class="mb-1">Soporte y Mantenimiento (31%): <span id="supportCost" class="text-white">$0.00</span></p>
+                                <p class="mb-1">Desarrollo y Ciberseguridad (9%): <span id="devCost" class="text-white">$0.00</span></p>
+                                <p class="mb-1 text-accent">Margen Neto Regulado (17%): <span id="profitCost" class="text-accent">$0.00</span></p>
+                                <hr class="border-secondary">
+                                <h5 class="text-white mb-0">Inversión Total: <span id="totalCost" class="text-accent">$0.00 USD</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- POLÍTICA DE PRIVACIDAD Y MANEJO DE DATOS -->
+        <section id="privacidad" class="py-5">
+            <div class="container">
+                <h2 class="text-white text-center mb-4"><span class="text-accent">03.</span> Privacidad y Telemetría en Vivo</h2>
+                
+                <div class="row align-items-center mb-5">
+                    <div class="col-md-6">
+                        <h4 class="text-white mb-3">Secreto Profesional y Depósito de Confianza</h4>
+                        <p>En <strong>SentinelEthos Tech</strong> aplicamos una política estricta de <em>Zero-Knowledge Arching</em>. Ciframos la telemetría de red desde el origen. La empresa no posee las llaves para inspeccionar correos, chats privados, ni contraseñas almacenadas en los dispositivos del usuario.</p>
+                        <p>La recolección de métricas se apaga automáticamente fuera de la jornada laboral oficial preestablecida entre el trabajador y la organización.</p>
+                        <p class="text-muted small">Todos los nodos de recolección están supeditados a la normativa internacional GDPR y leyes locales de protección de datos personales en posesión de particulares.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="audit-console glass-console position-relative">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h5 class="text-accent mb-0"><i class="fa-solid fa-terminal me-2"></i>Simulador de Telemetría</h5>
+                                <span class="badge bg-success" id="statusBadge">CONECTADO</span>
+                            </div>
+                            <p class="text-white mb-1">Cifrado de Red: <span class="text-success">AES-256 Activo</span></p>
+                            <p class="text-white mb-1">Keyloggers / Micrófono: <span class="text-danger">DESACTIVADO (Veto de Software)</span></p>
+                            <p class="text-white mb-1">Capturas de Pantalla: <span class="text-danger">BLOQUEADO POR POLÍTICA ÉTICA</span></p>
+                            <p class="text-white mb-2">Horario de Supervisión: <span class="text-accent" id="workHours">09:00 - 18:00 (En Horario)</span></p>
+                            
+                            <div class="mt-3 pt-2 border-top border-secondary">
+                                <p class="small text-muted mb-1">Registro de Tráfico en Tiempo Real:</p>
+                                <div id="logConsole" class="small text-accent font-monospace" style="height: 80px; overflow-y: auto;">
+                                    <div>[SYS] Inicializando socket seguro de telemetría...</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="glass-card p-4 h-100">
+                            <h5 class="text-accent mb-2"><i class="fa-solid fa-user-lock me-2"></i>Soberanía de Datos</h5>
+                            <p class="small text-light mb-0">Los registros de telemetría pertenecen legalmente al usuario y a la organización en acceso compartido. Ningún dato es comercializado a terceros o utilizado para entrenamiento de modelos externos.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="glass-card p-4 h-100">
+                            <h5 class="text-accent mb-2"><i class="fa-solid fa-trash-can me-2"></i>Purga Automatizada</h5>
+                            <p class="small text-light mb-0">Política de retención máxima de 30 días. Cumplido el plazo, las métricas de red son sobrescritas mediante algoritmos de destrucción criptográfica irrecuperable.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="glass-card p-4 h-100">
+                            <h5 class="text-accent mb-2"><i class="fa-solid fa-file-shield me-2"></i>Certificación Hashing</h5>
+                            <p class="small text-light mb-0">Cada bloque de registro generado se firma con algoritmos SHA-256 garantizando que las métricas de red no sean alteradas ni por administradores ni por agentes externos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMPROMISO ÉTICO -->
+        <section id="compromiso" class="py-5 bg-secondary-dark">
+            <div class="container">
+                <h2 class="text-white text-center mb-2"><span class="text-accent">04.</span> Nuestro Compromiso Ético & Código de Gobernanza</h2>
+                <p class="text-center text-muted col-md-8 mx-auto mb-5">Fundamentamos el desarrollo de ciberseguridad en el respeto infranqueable a la persona humana. La tecnología debe actuar como escudo protector, jamás como un panóptico inquisidor.</p>
+
+                <div class="row g-4 mb-5">
+                    <div class="col-md-6">
+                        <div class="card card-custom glass-card p-4 h-100 border-start border-4 border-accent">
+                            <h4 class="text-accent mb-3"><i class="fa-solid fa-gavel me-2"></i>1. Derecho a la Explicabilidad y Juicio Humano</h4>
+                            <p>Rechazamos la "ejecución algorítmica automatizada". Ningún algoritmo o heurística de SentinelEthos generará sanciones administrativas, reportes de bajo rendimiento con penalización o despidos automatizados.</p>
+                            <p class="text-muted small">Cualquier anomalía detectada requiere una revisión con criterio prudencial (Phrónesis) realizada por un directivo humano calificado y justificada fehacientemente ante el colaborador.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card card-custom glass-card p-4 h-100 border-start border-4 border-accent">
+                            <h4 class="text-accent mb-3"><i class="fa-solid fa-ban me-2"></i>2. Veto Arquitectónico a Herramientas Invasivas</h4>
+                            <p>Excluimos desde el nivel de código fuente el desarrollo, integración o venta a pedido de módulos de espiado masivo (*Keyloggers*, activación discrecional de cámaras/micrófonos, inspección de paquetes personales de voz/video).</p>
+                            <p class="text-muted small">Mantenemos nuestra independencia tecnológica y contractual: si un cliente solicita la habilitación de dichas funciones, la relación comercial se rescinde de manera inmediata.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card card-custom glass-card p-4 h-100 border-start border-4 border-accent">
+                            <h4 class="text-accent mb-3"><i class="fa-solid fa-clock-rotate-left me-2"></i>3. Desconexión Digital Garantizada</h4>
+                            <p>Respetamos los límites temporales y territoriales del hogar del trabajador. Fuera del horario de jornada pactado, el motor de telemetría detiene automáticamente cualquier recopilación de datos de tráfico.</p>
+                            <p class="text-muted small">El empleado conserva el control total de sus dispositivos fuera de horas laborales, previniendo el estrés por supervisión continua (*Burnout por vigilancia*).</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card card-custom glass-card p-4 h-100 border-start border-4 border-accent">
+                            <h4 class="text-accent mb-3"><i class="fa-solid fa-eye me-2"></i>4. Audit-Log Abierto y Paridad Informativa</h4>
+                            <p>Eliminamos la asimetría de información entre la empresa y el empleado. Todo colaborador supervisado cuenta con una consola personal donde puede revisar cada registro de red recolectado de su equipo.</p>
+                            <p class="text-muted small">Garantizamos el derecho de rectificación y aclaración en caso de inconsistencias o falsos positivos en el tráfico detectado.</p>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="card card-custom glass-card p-4 max-w-800 mx-auto">
+                    <h4 class="text-accent mb-3 text-center"><i class="fa-solid fa-sliders me-2"></i>Verificador de Declaración de Principios</h4>
+                    <p class="text-center text-muted small mb-4">Haz clic en los pilares para evaluar las salvaguardas técnicas que respaldan cada norma moral de nuestra arquitectura:</p>
+                    
+                    <div class="d-flex justify-content-center gap-2 mb-4 flex-wrap" id="ethicFilterContainer">
+                        <button class="btn btn-outline-light btn-sm ethic-filter-btn active" data-filter="explicabilidad">Explicabilidad</button>
+                        <button class="btn btn-outline-light btn-sm ethic-filter-btn" data-filter="veto">Veto a Invasión</button>
+                        <button class="btn btn-outline-light btn-sm ethic-filter-btn" data-filter="desconexion">Desconexión</button>
+                        <button class="btn btn-outline-light btn-sm ethic-filter-btn" data-filter="auditoria">Paridad / Log</button>
+                    </div>
+
+                    <div class="audit-console glass-console text-white" id="ethicDetailDisplay">
+                        <h5 class="text-accent mb-2" id="ethicTitle">// 1. Explicabilidad y Juicio Humano</h5>
+                        <p class="mb-1" id="ethicDesc">Garantía de que ningún modelo de IA o algoritmo tomará determinaciones punitivas automáticas. El algoritmo solo alerta sobre patrones de red; la valoración moral y laboral recae siempre en la interacción humana contextualizada.</p>
+                        <hr class="border-secondary my-2">
+                        <small class="text-muted">Métrica de Cumplimiento: <span class="text-success" id="ethicMetric">100% Casos Auditados por Comité Interno</span></small>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- VISTA 2: PÁGINA INDIVIDUAL "ACERCA DE NOSOTROS" (DESARROLLADA) -->
+    <section id="acerca-de" class="py-5 view-section d-none">
+        <div class="container" style="padding-top: 80px;">
+            <div class="text-center mb-5">
+                <span class="badge badge-ethic mb-2 px-3 py-2">Nuestra Identidad, Filosofía & Arquitectura</span>
+                <h1 class="text-white fw-bold display-4">Acerca de <span class="text-accent">SentinelEthos Tech</span></h1>
+                <p class="text-muted col-md-8 mx-auto lead">Redefiniendo el paradigma de la seguridad informática corporativa mediante principios de ética kantiana, privacidad por diseño y transparencia bilateral.</p>
+            </div>
+
+            <!-- Historia y Misión / Visión -->
+            <div class="row g-4 mb-5">
+                <div class="col-md-6">
+                    <div class="glass-card p-4 p-md-5 h-100 border-start border-4 border-accent">
+                        <h3 class="text-accent mb-3"><i class="fa-solid fa-compass me-2"></i>Nuestra Historia</h3>
+                        <p class="text-light">SentinelEthos Tech nació en las aulas e laboratorios de ingeniería de software como una respuesta crítica frente a la proliferación de software de intrusión laboral (*bossware*). La rápida migración hacia esquemas de trabajo remoto e híbrido trajo consigo una ola de herramientas invasivas que degradaban la dignidad del profesional de tecnología.</p>
+                        <p class="text-light mb-0">Decidimos construir una plataforma disruptiva guiada por principios de <strong>Justicia Conmutativa</strong> y <strong>Cero Invasión Tecnológica</strong>, demostrando que es técnicamente factible asegurar redes de infraestructura crítica sin vigilar la vida personal del colaborador.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="glass-card p-4 p-md-5 h-100 border-start border-4 border-accent">
+                        <h3 class="text-accent mb-3"><i class="fa-solid fa-bullseye me-2"></i>Misión y Visión</h3>
+                        <h5 class="text-white fw-bold">Misión</h5>
+                        <p class="text-light small mb-3">Proveer infraestructura de ciberseguridad perimetral y analítica de disponibilidad que proteja la integridad operativa de las empresas sin transgredir la dignidad ni la intimidad de los trabajadores.</p>
+                        <h5 class="text-white fw-bold">Visión</h5>
+                        <p class="text-light small mb-0">Consolidarnos como el estándar internacional de gobernanza tecnológica ética, demostrando que la alta seguridad informática y la confianza laboral pueden coexistir en perfecta armonía.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Manifiesto de Ingeniería Ética -->
+            <div class="glass-card p-4 p-md-5 mb-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <h3 class="text-white fw-bold mb-3"><i class="fa-solid fa-scroll text-accent me-2"></i>El Manifiesto de Ingeniería Ética</h3>
+                        <p class="text-light">En SentinelEthos formulamos un conjunto de directrices infranqueables que regulan la compilación de nuestros componentes informáticos:</p>
+                        <ul class="list-unstyled text-light small">
+                            <li class="mb-2"><i class="fa-solid fa-check text-accent me-2"></i><strong>Privacidad desde el Diseño (Privacy by Design):</strong> Todo módulo nuevo inicia desactivado por defecto para métricas que superen la capa perimetral.</li>
+                            <li class="mb-2"><i class="fa-solid fa-check text-accent me-2"></i><strong>Transparencia Criptográfica:</strong> Todo colaborador puede inspeccionar el código del agente instalado en su cliente local.</li>
+                            <li class="mb-2"><i class="fa-solid fa-check text-accent me-2"></i><strong>Resistencia a la Comercialización:</strong> Veto absoluto a la monetización o cruce de metadatos de comportamiento con brokeres de datos.</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="audit-console glass-console p-3">
+                            <p class="text-accent fw-bold mb-2">// Código de Ética Integrado (Compiler Level):</p>
+                            <pre class="text-success mb-0 font-monospace small" style="white-space: pre-wrap;">
+if (feature.isKeylogger() || feature.capturesScreen()) {
+    throw new EthicalViolationException("Función prohibida por el Manifiesto SentinelEthos.");
+}
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Valores Institucionales -->
+            <h3 class="text-white text-center mb-4"><i class="fa-solid fa-gem text-accent me-2"></i>Valores Fundamentales</h3>
+            <div class="row g-4 mb-5">
+                <div class="col-md-3">
+                    <div class="glass-card p-4 text-center h-100">
+                        <div class="fs-1 text-accent mb-2"><i class="fa-solid fa-scale-balanced"></i></div>
+                        <h5 class="text-white">Transparencia Bilateral</h5>
+                        <p class="small text-muted mb-0">El colaborador tiene pleno derecho de conocer la telemetría exacta recolectada en su terminal.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="glass-card p-4 text-center h-100">
+                        <div class="fs-1 text-accent mb-2"><i class="fa-solid fa-lock"></i></div>
+                        <h5 class="text-white">Minimización de Datos</h5>
+                        <p class="small text-muted mb-0">Recopilamos únicamente los bytes indispensables para aislar amenazas cibernéticas.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="glass-card p-4 text-center h-100">
+                        <div class="fs-1 text-accent mb-2"><i class="fa-solid fa-handshake"></i></div>
+                        <h5 class="text-white">Precios Justos</h5>
+                        <p class="small text-muted mb-0">Tarifas transparentes calculadas sobre costos reales de infraestructura y desarrollo.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="glass-card p-4 text-center h-100">
+                        <div class="fs-1 text-accent mb-2"><i class="fa-solid fa-user-check"></i></div>
+                        <h5 class="text-white">Centralidad Humana</h5>
+                        <p class="small text-muted mb-0">Las decisiones administrativas y punitivas siempre recaen en el juicio humano, jamás en la IA.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Metodología de Desarrollo & Stack Tecnológico -->
+            <div class="row g-4 mb-5">
+                <div class="col-md-6">
+                    <div class="glass-card p-4 h-100">
+                        <h4 class="text-accent mb-3"><i class="fa-solid fa-layer-group me-2"></i>Stack Tecnológico de Confianza</h4>
+                        <p class="small text-light">Nuestras arquitecturas se construyen utilizando motores comprobados en la industria para garantizar durabilidad, rendimiento y cero filtraciones:</p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge bg-dark border border-secondary text-accent">Python / TensorFlow</span>
+                            <span class="badge bg-dark border border-secondary text-accent">Cisco NetFlow Protocol</span>
+                            <span class="badge bg-dark border border-secondary text-accent">Node.js / WebSockets</span>
+                            <span class="badge bg-dark border border-secondary text-accent">Bootstrap 5 Glassmorphism</span>
+                            <span class="badge bg-dark border border-secondary text-accent">TLS 1.3 / AES-256</span>
+                            <span class="badge bg-dark border border-secondary text-accent">PostgreSQL + SHA-256</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="glass-card p-4 h-100">
+                        <h4 class="text-accent mb-3"><i class="fa-solid fa-vial me-2"></i>Auditoría Externa Continua</h4>
+                        <p class="small text-light">Sometemos nuestro código a pruebas periódicas de penetración (PenTesting) y revisiones de código abierto con terceros para garantizar la neutralidad del software:</p>
+                        <ul class="list-unstyled small text-light mb-0">
+                            <li class="mb-2"><i class="fa-solid fa-shield text-accent me-2"></i>Verificación de no inclusión de troyanos o módulos ocultos.</li>
+                            <li class="mb-2"><i class="fa-solid fa-shield text-accent me-2"></i>Certificación de apego estricto a la directiva europea GDPR.</li>
+                            <li><i class="fa-solid fa-shield text-accent me-2"></i>Validación de borrado seguro a los 30 días naturales.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Equipo de Desarrollo Tecnológico -->
+            <div class="glass-card p-4 p-md-5 max-w-800 mx-auto text-center">
+                <h3 class="text-accent mb-3"><i class="fa-solid fa-code me-2"></i>Origen Académico & Proyecto Integrador</h3>
+                <p class="text-light">Esta plataforma es el resultado directo de la investigación aplicada y el desarrollo tecnológico realizado dentro del programa de <strong>Tecnologías de la Información en los Negocios (TIN)</strong>.</p>
+                <div class="audit-console glass-console text-start mx-auto mt-4" style="max-width: 600px;">
+                    <p class="text-accent mb-1">// Ficha de Desarrollo:</p>
+                    <p class="text-white mb-1">Entidad: SentinelEthos Tech Lab</p>
+                    <p class="text-white mb-1">Programa: Tecnologías de la Información en los Negocios</p>
+                    <p class="text-white mb-1">Enfoque: Ciberseguridad, Redes Cifradas y Gobernanza Digital Ética</p>
+                    <p class="text-white mb-0">Estatus: Prototipo de Producción v2.4 (2026)</p>
+                </div>
+                <div class="mt-4">
+                    <a href="#inicio" class="btn btn-accent nav-link-custom"><i class="fa-solid fa-arrow-left me-2"></i>Volver a la Página Principal</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VISTA 3: PÁGINA INDIVIDUAL DE "CONTACTO" (NUEVA PÁGINA DEDICADA) -->
+    <section id="contacto-page" class="py-5 view-section d-none">
+        <div class="container" style="padding-top: 80px;">
+            <div class="text-center mb-5">
+                <span class="badge badge-ethic mb-2 px-3 py-2">Canal de Comunicación Directo</span>
+                <h1 class="text-white fw-bold display-4">Ponte en <span class="text-accent">Contacto</span></h1>
+                <p class="text-muted col-md-8 mx-auto lead">¿Tienes dudas sobre nuestra arquitectura ética, deseas solicitar una auditoría técnica o requieres una simulación corporativa personalizada? Nuestro equipo está listo para atenderte.</p>
+            </div>
+
+            <div class="row g-4 mb-5">
+                <!-- Información de Contacto Extendida -->
+                <div class="col-lg-5">
+                    <div class="glass-card p-4 p-md-5 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <h3 class="text-white fw-bold mb-4">Canales Oficiales</h3>
+                            
+                            <div class="d-flex align-items-start mb-4">
+                                <div class="fs-3 text-accent me-3"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <h5 class="text-white mb-1">Oficinas Centrales</h5>
+                                    <p class="text-muted small mb-0">Insurgentes Sur #1602, Piso 9, Crédito Constructor, Benito Juárez, CDMX, C.P. 03940, México.</p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-start mb-4">
+                                <div class="fs-3 text-accent me-3"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <h5 class="text-white mb-1">Atención por Correo</h5>
+                                    <p class="text-muted small mb-0">Soporte Técnico: <a href="mailto:soporte@sentinelethos.com" class="text-accent text-decoration-none">soporte@sentinelethos.com</a></p>
+                                    <p class="text-muted small mb-0">Ventas y Licencias: <a href="mailto:contacto@sentinelethos.com" class="text-accent text-decoration-none">contacto@sentinelethos.com</a></p>
+                                    <p class="text-muted small mb-0">Oficial de Ética: <a href="mailto:ethic@sentinelethos.com" class="text-accent text-decoration-none">ethic@sentinelethos.com</a></p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-start mb-4">
+                                <div class="fs-3 text-accent me-3"><i class="fa-solid fa-phone"></i></div>
+                                <div>
+                                    <h5 class="text-white mb-1">Línea Directa</h5>
+                                    <p class="text-muted small mb-0">Conmutador: +52 (55) 8765-4321</p>
+                                    <p class="text-muted small mb-0">Horarios: Lunes a Viernes de 09:00 a 18:00 hrs (GMT-6)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-3 border-top border-secondary">
+                            <h6 class="text-white mb-3">Síguenos en Redes & Repositorios</h6>
+                            <div class="d-flex gap-3 fs-5">
+                                <a href="#" class="text-accent"><i class="fa-brands fa-github"></i></a>
+                                <a href="#" class="text-accent"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="#" class="text-accent"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#" class="text-accent"><i class="fa-brands fa-discord"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulario Extendido -->
+                <div class="col-lg-7">
+                    <div class="glass-card p-4 p-md-5">
+                        <h3 class="text-accent mb-3"><i class="fa-solid fa-paper-plane me-2"></i>Formulario de Solicitud Especializada</h3>
+                        <p class="text-muted small mb-4">Completa el siguiente formulario para canalizar tu solicitud con el departamento correspondiente. Te responderemos en un lapso no mayor a 4 horas hábiles.</p>
+                        
+                        <form id="contactForm" action="#" method="POST" onsubmit="event.preventDefault();">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label text-white small">Nombre Completo *</label>
+                                    <input type="text" class="form-control bg-dark text-white border-secondary glass-input" placeholder="Ej. Ana Martínez" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label text-white small">Correo Corporativo *</label>
+                                    <input type="email" class="form-control bg-dark text-white border-secondary glass-input" placeholder="nombre@empresa.com" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label text-white small">Empresa / Organización</label>
+                                    <input type="text" class="form-control bg-dark text-white border-secondary glass-input" placeholder="Nombre de tu empresa">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label text-white small">Tipo de Solicitud *</label>
+                                    <select class="form-select bg-dark text-white border-secondary glass-input" required>
+                                        <option value="" disabled selected>Selecciona una opción</option>
+                                        <option value="demo">Solicitud de Demo Corporativa</option>
+                                        <option value="cotizacion">Cotización de Plan Enterprise</option>
+                                        <option value="auditoria">Auditoría Ética de Código</option>
+                                        <option value="aclaracion">Aclaración de Telemetría (Empleado)</option>
+                                        <option value="otro">Otro Asunto</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label text-white small">Asunto *</label>
+                                    <input type="text" class="form-control bg-dark text-white border-secondary glass-input" placeholder="Breve descripción del tema" required>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label text-white small">Mensaje Detallado *</label>
+                                    <textarea class="form-control bg-dark text-white border-secondary glass-input" rows="4" placeholder="Escribe los detalles de tu consulta o requerimiento de infraestructura..." required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check text-muted small mb-3">
+                                        <input class="form-check-input" type="checkbox" id="privacyCheck" required>
+                                        <label class="form-check-label text-light" for="privacyCheck">
+                                            Acepto que los datos enviados sean procesados bajo la política de confidencialidad y no comerciales de SentinelEthos Tech.
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-accent w-100 py-3 fw-bold">Enviar Solicitud Directa</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div id="contactAlert" class="alert alert-success mt-3 d-none bg-dark border-accent text-accent" role="alert">
+                            <i class="fa-solid fa-circle-check me-2"></i>¡Mensaje enviado con éxito! Un especialista ético te contactará en breve.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Preguntas Frecuentes de Contacto (FAQ) -->
+            <div class="glass-card p-4 p-md-5 max-w-800 mx-auto">
+                <h4 class="text-accent mb-4 text-center"><i class="fa-solid fa-circle-question me-2"></i>Preguntas Frecuentes de Atencion Directa</h4>
+                <div class="accordion accordion-flush" id="faqAccordion">
+                    <div class="accordion-item bg-transparent text-white border-bottom border-secondary">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-transparent text-accent fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                ¿Cómo responden a solicitudes de aclaración de empleados sobre falso positivo?
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-light small">
+                                Cualquier empleado puede abrir un ticket directo especificando la fecha y hash de evento. El equipo técnico revisa el log SHA-256 junto con el usuario y emite un dictamen de corrección sin intervención de directivos.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-transparent text-white border-bottom border-secondary">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-transparent text-accent fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                ¿Ofrecen contratos SLA personalizados para grandes corporativos?
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-light small">
+                                Sí, en la modalidad Enterprise redactamos cláusulas personalizadas con penalizaciones económicas garantizadas para nosotros en caso de que la disponibilidad baje del 99.9%.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <a href="#inicio" class="btn btn-outline-light btn-sm nav-link-custom"><i class="fa-solid fa-arrow-left me-2"></i>Volver al Inicio</a>
+            </div>
+
+            <div class="external-page-footer text-center mt-5 pt-4 border-top border-secondary">
+                <h5 class="text-accent mb-3">Regresar a la página principal</h5>
+                <div class="d-flex justify-content-center gap-3 flex-wrap">
+                    <a href="#inicio" class="btn btn-outline-light btn-sm nav-link-custom">Inicio</a>
+                    <a href="#servicios" class="btn btn-outline-light btn-sm nav-link-custom">Servicios</a>
+                    <a href="#compromiso" class="btn btn-outline-light btn-sm nav-link-custom">Compromiso</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE TÉRMINOS Y CONDICIONES -->
+    <section id="terminos" class="py-5 view-section d-none bg-secondary-dark">
+        <div class="container" style="padding-top: 80px;">
+            <div class="text-center mb-5">
+                <span class="badge badge-ethic mb-2 px-3 py-2">Términos Legales de Uso</span>
+                <h1 class="text-white fw-bold display-4">Términos y <span class="text-accent">Condiciones</span></h1>
+                <p class="text-muted col-md-8 mx-auto lead">Consulta las condiciones de contratación, uso de la plataforma y los derechos y obligaciones asociados al servicio ético de SentinelEthos Tech.</p>
+            </div>
+
+            <div class="glass-card p-4 p-md-5 mb-5">
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <h3 class="text-accent mb-3">Alcance del Servicio</h3>
+                        <p class="text-light">SentinelEthos Tech entrega servicios de ciberseguridad perimetral, monitoreo de estado de red y transparencia de telemetría. No ofrecemos ni autorizamos el empleo de software de vigilancia personal, grabación de pantalla o registro de pulsaciones de teclado fuera de los límites estrictos del perímetro corporativo.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="text-accent mb-3">Responsabilidades y Limitaciones</h3>
+                        <p class="text-light">El cliente es responsable de mantener actualizados sus datos de contacto y de operar dentro de los términos acordados. SentinelEthos Tech no asume responsabilidad por incidentes producidos fuera de la infraestructura gestionada ni por la manipulación de dispositivos personales no autorizados.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="terminos-privacidad" class="glass-card p-4 p-md-5 mb-5">
+                <h3 class="text-accent mb-3">Política de Privacidad</h3>
+                <p class="text-light">Nuestra política de privacidad detalla los datos que recopilamos, cómo se utilizan y cuáles son los derechos de los usuarios. La información se trata con la máxima confidencialidad y se limita a lo estrictamente necesario para garantizar la seguridad perimetral y la operatividad del servicio.</p>
+                <ul class="list-unstyled text-light small">
+                    <li class="mb-2">Datos de identificación y contacto se utilizan únicamente para gestión contractual y soporte.</li>
+                    <li class="mb-2">Las telemetrías recolectadas se cifran en tránsito y reposo, y solo se comparten con personal autorizado.</li>
+                    <li>Los usuarios tienen derecho a solicitar acceso, rectificación y eliminación según la legislación aplicable.</li>
+                </ul>
+            </div>
+
+            <div id="terminos-cookies" class="glass-card p-4 p-md-5 mb-5">
+                <h3 class="text-accent mb-3">Política de Cookies</h3>
+                <p class="text-light">Nuestro sitio utiliza cookies técnicas para asegurar la funcionalidad del sitio y la experiencia de navegación. No empleamos cookies de seguimiento de terceros ni perfilado publicitario.</p>
+                <ul class="list-unstyled text-light small">
+                    <li class="mb-2">Cookies necesarias permiten el correcto funcionamiento de la sesión y la navegación segura.</li>
+                    <li class="mb-2">No recopilamos datos de comportamiento para fines comerciales o de marketing.</li>
+                    <li>El control de cookies puede realizarse mediante la configuración del navegador y políticas corporativas del cliente.</li>
+                </ul>
+            </div>
+
+            <div class="row g-4 mb-5">
+                <div class="col-md-4">
+                    <div class="card card-custom glass-card p-4 h-100">
+                        <h4 class="text-accent mb-3">Condiciones de Uso</h4>
+                        <ul class="list-unstyled text-light small">
+                            <li class="mb-2">El usuario acepta que el servicio se brindará según las políticas descritas en este documento y en la sección de privacidad.</li>
+                            <li class="mb-2">Queda prohibido intentar desactivar, eludir o manipular los agentes de monitoreo implantados en la red corporativa.</li>
+                            <li>El acceso externo a datos de telemetría solo se permite a usuarios autorizados y en justicia con nuestras garantías éticas.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom glass-card p-4 h-100">
+                        <h4 class="text-accent mb-3">Protección de Datos</h4>
+                        <ul class="list-unstyled text-light small">
+                            <li class="mb-2">Los datos procesados se gestionan conforme a GDPR y a los marcos legales aplicables en México.</li>
+                            <li class="mb-2">No almacenamos información personal sensible más allá de lo estrictamente necesario para la operación del servicio.</li>
+                            <li>Los registros de telemetría son cifrados y accesibles con la misma transparencia para administradores y empleados.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom glass-card p-4 h-100">
+                        <h4 class="text-accent mb-3">Cookies y Tecnologías</h4>
+                        <ul class="list-unstyled text-light small">
+                            <li class="mb-2">Nuestro portal utiliza cookies técnicas para la experiencia de navegación y autenticación de sesión.</li>
+                            <li class="mb-2">No empleamos cookies de perfilado para publicidad ni tracking de terceros.</li>
+                            <li>Para más detalles, revisa la sección de <a href="#privacidad" class="text-accent nav-link-custom">Política de Privacidad</a>.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card p-4 max-w-900 mx-auto">
+                <h4 class="text-accent mb-3">Modificaciones y Aceptación</h4>
+                <p class="text-light">SentinelEthos Tech puede actualizar estos términos en cualquier momento mediante publicación en este sitio. El uso continuado de los servicios después de los cambios implicará aceptación de los nuevos términos.</p>
+                <p class="text-muted small">En caso de discrepancias, prevalecerán las versiones publicadas en el sitio al momento de la contratación del servicio.</p>
+            </div>
+
+            <div class="text-center mt-4">
+                <a href="#inicio" class="btn btn-accent nav-link-custom"><i class="fa-solid fa-arrow-left me-2"></i>Volver al Inicio</a>
+            </div>
+
+            <div class="external-page-footer text-center mt-5 pt-4 border-top border-secondary">
+                <h5 class="text-accent mb-3">Regresar a la página principal</h5>
+                <div class="d-flex justify-content-center gap-3 flex-wrap">
+                    <a href="#inicio" class="btn btn-outline-light btn-sm nav-link-custom">Inicio</a>
+                    <a href="#servicios" class="btn btn-outline-light btn-sm nav-link-custom">Servicios</a>
+                    <a href="#compromiso" class="btn btn-outline-light btn-sm nav-link-custom">Compromiso</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL INTERACTIVO DE SIMULACIÓN -->
+    <div class="modal fade" id="demoModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content glass-card text-white border-accent">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title text-accent"><i class="fa-solid fa-shield-cat me-2"></i>Prueba de Monitoreo Transparente</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <p>Selecciona el colaborador y el tipo de consulta para generar un resultado de auditoría personalizado:</p>
+                    <div class="mb-3">
+                        <label for="auditName" class="form-label text-white small">Nombre del Colaborador</label>
+                        <input type="text" id="auditName" class="form-control bg-dark text-white border-secondary glass-input" placeholder="Ej. Luis Mendoza">
+                    </div>
+                    <div class="mb-3">
+                        <label for="auditScenario" class="form-label text-white small">Tipo de Consulta</label>
+                        <select id="auditScenario" class="form-select bg-dark text-white border-secondary glass-input">
+                            <option value="traffic">Análisis de Tráfico</option>
+                            <option value="compliance">Verificación de Cumplimiento</option>
+                            <option value="privacy">Revisión de Privacidad</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-accent w-100 mb-3" id="btnSimulateAudit">Generar Resultado Personalizado</button>
+                    <div id="modalAuditResult" class="audit-console glass-console d-none">
+                        <p class="text-accent mb-2" id="modalAuditSummary">Resultado de auditoría personalizado</p>
+                        <div id="modalAuditLines" class="text-light small"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER GENERAL -->
+<footer class="site-footer glassmorphism">
+  <div class="footer-container">
+    <!-- Columna 1: Info Marca -->
+    <div class="footer-brand">
+      <h3 class="footer-title">TuMarca</h3>
+      <p>Transformando ideas en soluciones digitales innovadoras y de alto impacto.</p>
+      <div class="social-links">
+        <a href="#" aria-label="Facebook" class="social-icon">FB</a>
+        <a href="#" aria-label="Twitter" class="social-icon">X</a>
+        <a href="#" aria-label="LinkedIn" class="social-icon">IN</a>
+        <a href="#" aria-label="GitHub" class="social-icon">GH</a>
+      </div>
+    </div>
+
+    <!-- Columna 2: Enlaces Rápidos -->
+    <div class="footer-links">
+      <h4>Navegación</h4>
+      <ul>
+        <li><a href="#inicio" class="nav-link-custom">Inicio</a></li>
+        <li><a href="#servicios" class="nav-link-custom">Servicios</a></li>
+        <li><a href="#compromiso" class="nav-link-custom">Compromiso</a></li>
+        <li><a href="#contacto-page" class="nav-link-custom">Contacto</a></li>
+      </ul>
+    </div>
+
+    <!-- Columna 3: Legal -->
+    <div class="footer-links">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="#terminos" class="nav-link-custom">Términos y Condiciones</a></li>
+        <li><a href="#terminos-privacidad" class="nav-link-custom">Política de Privacidad</a></li>
+        <li><a href="#terminos-cookies" class="nav-link-custom">Política de Cookies</a></li>
+      </ul>
+    </div>
+
+    <!-- Columna 4: Boletín / Contacto -->
+    <div class="footer-newsletter">
+      <h4>Suscríbete</h4>
+      <p>Recibe las últimas novedades directamente en tu correo.</p>
+      <form class="newsletter-form" onsubmit="event.preventDefault();">
+        <input type="email" placeholder="Tu correo electrónico" required class="glass-input">
+        <button type="submit" class="btn-glass">Enviar</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 TuMarca. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
