@@ -12,6 +12,70 @@
     <link rel="stylesheet" href="css/styles.css">
 </head> 
 <body>
+    <div id="welcomeLock" class="login-screen">
+        <div class="login-backdrop"></div>
+        <div class="login-panel glass-card">
+            <div class="login-main-column">
+                <div class="login-brand">
+                    <span class="brand-mark"><i class="fa-solid fa-shield-halved"></i></span>
+                    <div>
+                        <div class="login-eyebrow">Portal seguro</div>
+                        <h2>SentinelEthos</h2>
+                    </div>
+                </div>
+
+                <h3>Bienvenido</h3>
+                <p>Accede a la consola de seguridad y gobernanza digital.</p>
+
+                <form id="loginForm" class="login-form">
+                    <label>
+                        <span>Correo institucional</span>
+                        <input type="email" id="loginEmail" class="glass-input" placeholder="admin@sentinelethos.com" required>
+                    </label>
+
+                    <label>
+                        <span>Contraseña</span>
+                        <input type="password" id="loginPassword" class="glass-input" placeholder="••••••••" required>
+                    </label>
+
+                    <div class="login-hint">
+                        Demo: <strong>admin@sentinelethos.com</strong> / <strong>Sentinel2026!</strong>
+                    </div>
+
+                    <button type="submit" class="btn btn-accent w-100 mt-3">Entrar al sitio</button>
+                    <div id="loginError" class="login-error" aria-live="polite"></div>
+                </form>
+
+                <footer class="login-footer">
+                    <span class="login-copyright">© 2026 SentinelEthos</span>
+                    <span class="login-status"><i class="fa-solid fa-circle-check"></i> Portal verificado</span>
+                </footer>
+            </div>
+
+            <div class="login-sidebar-column">
+                <div class="login-summary-box">
+                    <span class="card-kicker">Resumen corporativo</span>
+                    <h4>Protección operativa con respeto a la privacidad</h4>
+                    <p>Arquitectura de ciberseguridad orientada a la continuidad, la trazabilidad y la dignidad digital del personal.</p>
+                </div>
+
+                <div class="login-extra-grid">
+                    <article class="login-extra-card">
+                        <span class="card-kicker">Acerca de nosotros</span>
+                        <h4>SentinelEthos Tech</h4>
+                        <p>Diseñamos seguridad informática con principios éticos, transparencia y respeto por la privacidad del trabajo digital.</p>
+                    </article>
+
+                    <article class="login-extra-card">
+                        <span class="card-kicker">Contacto</span>
+                        <h4>Atención directa</h4>
+                        <p>soporte@sentinelethos.com</p>
+                        <p>+52 (55) 8765-4321</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- NAVBAR GLASSMORPHISM -->
     <nav class="navbar navbar-expand-lg fixed-top glass-nav">
@@ -26,13 +90,34 @@
                     <li class="nav-item"><a class="nav-link nav-link-custom" href="#precios">Precios Justos</a></li>
                     <li class="nav-item"><a class="nav-link nav-link-custom" href="#privacidad">Política y Datos</a></li>
                     <li class="nav-item"><a class="nav-link nav-link-custom" href="#compromiso">Nuestro Compromiso Ético</a></li>
-                    <li class="nav-item"><a class="nav-link nav-link-custom" href="#acerca-de">Acerca de Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link nav-link-custom" href="#contacto-page">Contacto</a></li>
-                    <li class="nav-item"><a class="nav-link btn-accent-sm ms-lg-3 mt-2 mt-lg-0" href="#demoModal" data-bs-toggle="modal">Probar Simulación</a></li>
+                    <li class="nav-item"><button id="logoutButton" class="nav-link btn btn-outline-light btn-sm ms-lg-3 mt-2 mt-lg-0 logout-btn" type="button">Cerrar sesión</button></li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <button id="sidebarToggle" class="sidebar-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <aside id="siteSidebar" class="site-sidebar" aria-label="Menú lateral">
+        <div class="sidebar-brand">
+            <span class="brand-mark"><i class="fa-solid fa-shield-halved"></i></span>
+            <div>
+                <div class="sidebar-label">Panel</div>
+                <strong>SentinelEthos</strong>
+            </div>
+        </div>
+
+        <nav class="sidebar-nav" aria-label="Sidebar de navegación">
+            <a class="sidebar-link nav-link-custom" href="#acerca-de">Acerca de nosotros</a>
+            <a class="sidebar-link nav-link-custom" href="#contacto-page">Contacto</a>
+            <a class="sidebar-link nav-link-custom" href="ayuda.html">Ayuda</a>
+            <a class="sidebar-link sidebar-link-primary nav-link-custom" href="#demoModal" data-bs-toggle="modal">Probar Simulación</a>
+        </nav>
+    </aside>
 
     <!-- VISTA 1: PÁGINA PRINCIPAL / LANDING PAGE -->
     <div id="main-content" class="view-section">
@@ -40,12 +125,59 @@
         <section id="inicio" class="hero-section text-center parallax-bg">
             <div class="container">
                 <div class="glass-card hero-glass-box mx-auto p-4 p-md-5">
-                    <span class="badge badge-ethic mb-3 px-3 py-2">Ciberseguridad Respetuosa con el Trabajador</span>
-                    <h1 class="display-4 fw-bold text-white mb-3">Protección de Red Avanzada sin Invasión a la Privacidad</h1>
-                    <p class="lead col-md-10 mx-auto mb-4">Garantizamos la seguridad perimetral corporativa de equipos remotos sin recurrir a vigilancia masiva, spyware ni vulneración de la intimidad personal.</p>
-                    <div class="d-flex justify-content-center gap-3 flex-wrap">
-                        <a href="#servicios" class="btn btn-accent btn-lg nav-link-custom">Explorar Soluciones</a>
-                        <a href="#demoModal" class="btn btn-outline-light btn-lg" data-bs-toggle="modal">Simular Monitoreo</a>
+                    <div class="hero-grid">
+                        <div class="hero-copy text-start">
+                            <span class="badge badge-ethic mb-3 px-3 py-2">Ciberseguridad Respetuosa con el Trabajador</span>
+                            <h1 class="display-4 fw-bold text-white mb-3">Protección de Red Avanzada sin Invasión a la Privacidad</h1>
+                            <p class="lead col-md-10 mb-4">Garantizamos la seguridad perimetral corporativa de equipos remotos sin recurrir a vigilancia masiva, spyware ni vulneración de la intimidad personal.</p>
+                            <div class="d-flex justify-content-start gap-3 flex-wrap">
+                                <a href="#servicios" class="btn btn-accent btn-lg nav-link-custom">Explorar Soluciones</a>
+                                <a href="#demoModal" class="btn btn-outline-light btn-lg" data-bs-toggle="modal">Simular Monitoreo</a>
+                            </div>
+                        </div>
+
+                        <div class="hero-panel">
+                            <div class="hero-panel-header">
+                                <span class="status-dot"></span>
+                                <span>Network Integrity</span>
+                                <span class="ms-auto text-accent">99.94%</span>
+                            </div>
+
+                            <div class="hero-stats">
+                                <div class="stat-box skeleton-target">
+                                    <small>Threats blocked</small>
+                                    <strong class="stat-count" data-target="1284">0</strong>
+                                </div>
+                                <div class="stat-box skeleton-target">
+                                    <small>MTTR</small>
+                                    <strong class="stat-count" data-target="11">0</strong>
+                                </div>
+                                <div class="stat-box skeleton-target">
+                                    <small>Users protected</small>
+                                    <strong class="stat-count" data-target="96">0</strong>
+                                </div>
+                            </div>
+
+                            <div class="chart-card skeleton-target">
+                                <div class="chart-labels">
+                                    <span>Mon</span>
+                                    <span>Tue</span>
+                                    <span>Wed</span>
+                                    <span>Thu</span>
+                                    <span>Fri</span>
+                                </div>
+                                <svg class="hero-chart" viewBox="0 0 260 110" preserveAspectRatio="none" aria-label="Gráfica de actividad">
+                                    <defs>
+                                        <linearGradient id="heroLineGradient" x1="0" x2="1">
+                                            <stop offset="0%" stop-color="#64ffda" stop-opacity="0.25" />
+                                            <stop offset="100%" stop-color="#64ffda" stop-opacity="0.9" />
+                                        </linearGradient>
+                                    </defs>
+                                    <path d="M0,92 L40,86 L80,72 L120,64 L160,54 L200,50 L240,28 L260,22" stroke="url(#heroLineGradient)" stroke-width="4" fill="none" stroke-linecap="round"/>
+                                    <path d="M0,92 L40,86 L80,72 L120,64 L160,54 L200,50 L240,28 L260,22 L260,110 L0,110 Z" fill="rgba(100,255,218,0.08)"/>
+                                </svg>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -219,6 +351,63 @@
             </div>
         </section>
 
+        <!-- CREDENCIALES Y CERTIFICACIONES -->
+        <section id="credenciales" class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="badge badge-ethic mb-3 px-3 py-2">Nuestras credenciales</span>
+                    <h2 class="text-white mb-2"><span class="text-accent">03.</span> Certificados que avalan el sistema</h2>
+                    <p class="text-muted col-md-8 mx-auto mb-0">Nuestra plataforma opera con estándares internacionales de trazabilidad, confidencialidad y sostenibilidad en seguridad digital, reforzando la confianza del cliente y del trabajador.</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="glass-card p-4 h-100 certificate-card">
+                            <div class="certificate-icon"><i class="fa-solid fa-certificate"></i></div>
+                            <span class="card-kicker">ISO 27001</span>
+                            <h4 class="text-white mb-3">Gestión de Seguridad de la Información</h4>
+                            <p class="text-light small mb-0">Asegura controles de seguridad de la información, políticas de acceso, gestión de riesgos y continuidad operativa en entornos críticos.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="glass-card p-4 h-100 certificate-card">
+                            <div class="certificate-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                            <span class="card-kicker">SOC 2</span>
+                            <h4 class="text-white mb-3">Confianza, disponibilidad y integridad</h4>
+                            <p class="text-light small mb-0">Verifica la protección de datos, la resiliencia de servicios y la operativa responsable en sistemas de monitoreo y transparencia digital.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="glass-card p-4 h-100 certificate-card">
+                            <div class="certificate-icon"><i class="fa-solid fa-lock"></i></div>
+                            <span class="card-kicker">GDPR</span>
+                            <h4 class="text-white mb-3">Protección de datos y privacidad</h4>
+                            <p class="text-light small mb-0">Cumplimiento de principios de minimización, trazabilidad, acceso y derecho de rectificación para una gobernanza digital ética.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certification-strip glass-card mt-5 p-4">
+                    <div class="row g-3 align-items-center text-center text-md-start">
+                        <div class="col-md-3">
+                            <div class="mini-cert"><i class="fa-solid fa-check-circle text-accent me-2"></i>Auditoría interna anual</div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mini-cert"><i class="fa-solid fa-check-circle text-accent me-2"></i>Firma digital</div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mini-cert"><i class="fa-solid fa-check-circle text-accent me-2"></i>Política de retención</div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mini-cert"><i class="fa-solid fa-check-circle text-accent me-2"></i>Continuidad operativa</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- POLÍTICA DE PRIVACIDAD Y MANEJO DE DATOS -->
         <section id="privacidad" class="py-5">
             <div class="container">
@@ -383,6 +572,44 @@ if (feature.isKeylogger() || feature.capturesScreen()) {
     throw new EthicalViolationException("Función prohibida por el Manifiesto SentinelEthos.");
 }
                             </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nuestro Equipo -->
+            <div class="mb-5">
+                <h3 class="text-white text-center mb-4"><i class="fa-solid fa-users text-accent me-2"></i>Nuestro equipo</h3>
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="glass-card p-4 h-100 team-card">
+                            <div class="team-role">Fundador</div>
+                            <h4 class="text-white mb-3">Ian Cortes</h4>
+                            <p class="text-light mb-0">Ian Cortes es el impulsor intelectual y estratégico de SentinelEthos Tech. Desde su visión inicial, definió la misión del proyecto: construir una solución de seguridad digital que proteja a las organizaciones sin vulnerar la dignidad de las personas. Con una mirada crítica hacia el uso invasivo del monitoreo laboral, Ian propone un modelo donde la ciberseguridad se entiende como un servicio de confianza y protección, no como un sistema de vigilancia encubierta. Su liderazgo combina visión empresarial, pensamiento ético y criterio tecnológico para equilibrar continuidad operativa con respeto por la privacidad.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="glass-card p-4 h-100 team-card">
+                            <div class="team-role">Director de operaciones</div>
+                            <h4 class="text-white mb-3">Emiliano Corona</h4>
+                            <p class="text-light mb-0">Emiliano Corona aporta un enfoque riguroso para la ejecución operativa del sistema. Su experiencia se centra en la coordinación entre infraestructura, continuidad del servicio y despliegue de protocolos seguros en entornos empresariales. En SentinelEthos, Emiliano es responsable de estructurar la capa operativa que permite que la plataforma funcione con fiabilidad, trazabilidad y disciplina. Además, lidera la revisión de procedimientos para asegurar que cada servicio cumpla con estándares de seguridad, disponibilidad y control interno sin comprometer la confianza del usuario final.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="glass-card p-4 h-100 team-card">
+                            <div class="team-role">Ingeniero de arquitectura</div>
+                            <h4 class="text-white mb-3">Leonardo Gallegos</h4>
+                            <p class="text-light mb-0">Leonardo Gallegos se encarga de diseñar la base técnica que hace posible la seguridad perimetral con responsabilidad ética. Su enfoque se orienta a la arquitectura modular, la integración de componentes de monitoreo, la validación de protocolos y la optimización del rendimiento del sistema. Leonardo trabaja en la construcción del modelo que permite detectar amenazas sin recurrir a prácticas invasivas, poniendo atención especial a la minimización de datos, la cifración y la integridad de los flujos de información. Su trabajo es clave en la idea de que la seguridad debe ser eficiente, transparente y proporcional.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="glass-card p-4 h-100 team-card">
+                            <div class="team-role">Responsable de confianza digital</div>
+                            <h4 class="text-white mb-3">Carlo Correa</h4>
+                            <p class="text-light mb-0">Carlo Correa colabora en la dimensión de gobernanza, cumplimiento y confianza digital del proyecto. Su labor se enfoca en la articulación de principios legales, normativos y éticos con la solución tecnológica que desarrollan. En la práctica, Carlo supervisa la revisión de políticas de privacidad, retención de datos y buenas prácticas de transparencia para garantizar que el sistema responda a estándares internacionales sin perder la visión humana de la empresa. Su presencia fortalece la relación entre la tecnología, la seguridad y la responsabilidad social de la organización.</p>
                         </div>
                     </div>
                 </div>
@@ -583,6 +810,27 @@ if (feature.isKeylogger() || feature.capturesScreen()) {
                 </div>
             </div>
 
+            <div class="row g-4 mt-2 mb-5">
+                <div class="col-md-4">
+                    <div class="glass-card p-4 h-100">
+                        <h5 class="text-accent mb-3"><i class="fa-solid fa-headset me-2"></i>Soporte Técnico</h5>
+                        <p class="text-light small mb-0">Respuesta operativa para incidencias de infraestructura, conectividad, disponibilidad y alertas de seguridad, con coordinación directa con nuestros equipos de monitoreo y continuidad.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="glass-card p-4 h-100">
+                        <h5 class="text-accent mb-3"><i class="fa-solid fa-scale-balanced me-2"></i>Auditoría Ética</h5>
+                        <p class="text-light small mb-0">Revisión de registros, validación de violaciones a principios de privacidad y análisis de cumplimiento para empleados, clientes o comités de gobernanza.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="glass-card p-4 h-100">
+                        <h5 class="text-accent mb-3"><i class="fa-solid fa-file-contract me-2"></i>Contratación</h5>
+                        <p class="text-light small mb-0">Cotización de planes, acuerdos de nivel de servicio y elaboración de estructuras de seguridad adaptadas a la operación real de cada organización.</p>
+                    </div>
+                </div>
+            </div>
+
             <!-- Preguntas Frecuentes de Contacto (FAQ) -->
             <div class="glass-card p-4 p-md-5 max-w-800 mx-auto">
                 <h4 class="text-accent mb-4 text-center"><i class="fa-solid fa-circle-question me-2"></i>Preguntas Frecuentes de Atencion Directa</h4>
@@ -647,6 +895,27 @@ if (feature.isKeylogger() || feature.capturesScreen()) {
                     <div class="col-lg-6">
                         <h3 class="text-accent mb-3">Responsabilidades y Limitaciones</h3>
                         <p class="text-light">El cliente es responsable de mantener actualizados sus datos de contacto y de operar dentro de los términos acordados. SentinelEthos Tech no asume responsabilidad por incidentes producidos fuera de la infraestructura gestionada ni por la manipulación de dispositivos personales no autorizados.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 mb-5">
+                <div class="col-md-4">
+                    <div class="card card-custom glass-card p-4 h-100">
+                        <h4 class="text-accent mb-3">Principios de Gobernanza</h4>
+                        <p class="text-light small mb-0">Todo servicio se rige por transparencia, minimización de datos, igualdad de acceso a la información y respeto a la dignidad del trabajador.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom glass-card p-4 h-100">
+                        <h4 class="text-accent mb-3">Derechos del Usuario</h4>
+                        <p class="text-light small mb-0">El usuario puede solicitar trazabilidad, exportación de información, revisión de registros y el ejercicio de derechos ARCO conforme la normativa aplicable.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom glass-card p-4 h-100">
+                        <h4 class="text-accent mb-3">Cumplimiento</h4>
+                        <p class="text-light small mb-0">Nuestro marco de operación busca respetar GDPR, normas sectoriales y políticas internas de seguridad, privacidad y continuidad del negocio.</p>
                     </div>
                 </div>
             </div>
@@ -757,22 +1026,421 @@ if (feature.isKeylogger() || feature.capturesScreen()) {
         </div>
     </div>
 
+    <!-- MÓDULOS ADICIONALES DE SEGURIDAD / PRIVACIDAD / ANALÍTICA -->
+    <section id="security-modules" class="py-5 view-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge badge-ethic mb-3 px-3 py-2">Gobernanza digital y ciberseguridad</span>
+                <h2 class="text-white mb-2"><span class="text-accent">05.</span> Módulos de Seguridad, Privacidad y Operación</h2>
+                <p class="text-muted col-md-8 mx-auto mb-0">Una capa de gobernanza digital que mantiene la protección operativa sin perder la ética, la trazabilidad y la transparencia del resto de la plataforma.</p>
+            </div>
+
+            <div class="module-toolbar d-flex gap-2 flex-wrap justify-content-center mb-5">
+                <button class="btn btn-sm module-btn" data-target="#module-audit">Auditoría</button>
+                <button class="btn btn-sm module-btn" data-target="#module-sessions">Sesiones</button>
+                <button class="btn btn-sm module-btn" data-target="#module-auth">2FA / Políticas</button>
+                <button class="btn btn-sm module-btn" data-target="#module-rbac">RBAC</button>
+                <button class="btn btn-sm module-btn" data-target="#module-privacy">Privacy & ARCO</button>
+                <button class="btn btn-sm module-btn" data-target="#module-whistle">Canal Anónimo</button>
+                <button class="btn btn-sm module-btn" data-target="#module-sign">Firma Digital</button>
+                <button class="btn btn-sm module-btn" data-target="#module-dashboard">Dashboard</button>
+                <button class="btn btn-sm module-btn" data-target="#module-backup">Backup Center</button>
+                <button class="btn btn-sm module-btn" data-target="#module-api">API Keys</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="module-audit" class="module-page py-5 view-section d-none">
+        <div class="container">
+            <div class="glass-card p-4 p-md-5">
+                <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4">
+                    <div>
+                        <span class="badge badge-ethic mb-2">Log Intelligence</span>
+                        <h2 class="text-white mb-1">Auditoría Avanzada y Forense</h2>
+                    </div>
+                    <a href="#security-modules" class="btn btn-outline-light btn-sm nav-link-custom">Volver a módulos</a>
+                </div>
+
+                <div class="row g-4 mb-4">
+                    <div class="col-md-6">
+                        <div class="audit-console glass-console">
+                            <p class="text-accent fw-bold mb-3">// Panel de integridad y trazabilidad</p>
+                            <label class="d-block mb-2">Desde: <input type="date" id="audit-from-mini" class="glass-input mt-1"></label>
+                            <label class="d-block mb-2">Hasta: <input type="date" id="audit-to-mini" class="glass-input mt-1"></label>
+                            <label class="d-block mb-3">Criticidad: <select id="audit-level-mini" class="glass-input mt-1"><option value="all">Todas</option><option value="info">Info</option><option value="warn">Warn</option><option value="error">Error</option></select></label>
+                            <div class="d-flex gap-2 flex-wrap">
+                                <button id="audit-filter-mini" class="btn btn-accent-sm">Filtrar</button>
+                                <button id="audit-export-mini" class="btn btn-accent-sm">Exportar CSV</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="glass-card p-4 h-100">
+                            <h5 class="text-accent mb-3">Objetivo operativo</h5>
+                            <p class="text-light">Detecta actividades sensibles, anomalías de acceso y rastros de riesgo sin alterar la privacidad del usuario. Cada evento queda asociado a un hash SHA-256 para garantizar integridad y trazabilidad forense.</p>
+                            <ul class="text-light small mb-0 ps-3">
+                                <li>Validación de origen y prioridad de riesgo</li>
+                                <li>Exportación para análisis legal o institucional</li>
+                                <li>Correlación entre eventos y usuarios</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="audit-list-mini" class="audit-console glass-console" style="max-height:260px; overflow:auto"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="module-sessions" class="module-page py-5 view-section d-none">
+        <div class="container">
+            <div class="glass-card p-4 p-md-5">
+                <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4">
+                    <div>
+                        <span class="badge badge-ethic mb-2">Session Control</span>
+                        <h2 class="text-white mb-1">Gestión de Sesiones y Dispositivos Activos</h2>
+                    </div>
+                    <a href="#security-modules" class="btn btn-outline-light btn-sm nav-link-custom">Volver a módulos</a>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-7">
+                        <div class="glass-card p-4 h-100">
+                            <h5 class="text-accent mb-3">Sesiones vigentes</h5>
+                            <div id="sessions-mini" class="small text-light"></div>
+                            <button id="revoke-inactive-mini" class="btn btn-accent-sm mt-3">Cerrar inactivas</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="glass-card p-4 h-100">
+                            <h5 class="text-accent mb-3">Política de revocación</h5>
+                            <ul class="text-light small mb-0 ps-3">
+                                <li>Revocación por inactividad superior a 60 minutos</li>
+                                <li>Cierre remoto por riesgo o acceso sospechoso</li>
+                                <li>Bloqueo de sesión por políticas de cumplimiento</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="module-auth" class="module-page py-5 view-section d-none">
+        <div class="container">
+            <div class="glass-card p-4 p-md-5">
+                <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4">
+                    <div>
+                        <span class="badge badge-ethic mb-2">Authentication</span>
+                        <h2 class="text-white mb-1">Políticas de Contraseñas y 2FA/MFA</h2>
+                    </div>
+                    <a href="#security-modules" class="btn btn-outline-light btn-sm nav-link-custom">Volver a módulos</a>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="glass-card p-4 h-100">
+                            <h5 class="text-accent mb-3">Configuración de seguridad</h5>
+                            <div class="mb-3">
+                                <label>Longitud mínima: <input id="pw-min-mini" type="number" value="8" style="width:80px" class="glass-input d-inline-block ms-2"></label>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" id="pw-symbols-mini">
+                                <label class="form-check-label text-light" for="pw-symbols-mini">Forzar símbolos y caracteres especiales</label>
+                            </div>
+                            <button id="pw-save-mini" class="btn btn-accent-sm">Guardar política</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="glass-card p-4 h-100">
+                            <h5 class="text-accent mb-3">Enrolamiento TOTP</h5>
+                            <button id="totp-enroll-mini" class="btn btn-accent-sm mb-3">Generar secreto TOTP</button>
+                            <pre id="totp-secret-mini" class="mono text-light mb-0"></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="module-rbac" class="module-page py-5 view-section d-none">
+        <div class="container">
+            <div class="glass-card p-4 p-md-5">
+                <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4">
+                    <div>
+                        <span class="badge badge-ethic mb-2">Access governance</span>
+                        <h2 class="text-white mb-1">RBAC Avanzado (Matriz Granular)</h2>
+                    </div>
+                    <a href="#security-modules" class="btn btn-outline-light btn-sm nav-link-custom">Volver a módulos</a>
+                </div>
+
+                <div class="glass-card p-4 mb-4">
+                    <div id="rbac-mini" class="small text-light"></div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="glass-card p-4 h-100">
+                            <h5 class="text-accent">Permisos</h5>
+                            <p class="text-light small mb-0">Ver, Crear, Editar, Eliminar y Aprobar por módulo y por rol funcional.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="glass-card p-4 h-100">
+                            <h5 class="text-accent">Criterios</h5>
+                            <p class="text-light small mb-0">Alineación con el negocio, separación de funciones y control de acceso basado en riesgo.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="glass-card p-4 h-100">
+                            <h5 class="text-accent">Auditoría</h5>
+                            <p class="text-light small mb-0">Cada cambio en permisos queda registrado para revisión y control de cumplimiento.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="module-privacy" class="module-page py-5 view-section d-none">
+        <div class="container">
+            <div class="glass-card p-4 p-md-5">
+                <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4">
+                    <div>
+                        <span class="badge badge-ethic mb-2">Privacy & ARCO</span>
+                        <h2 class="text-white mb-1">Privacy & ARCO Manager</h2>
+                    </div>
+                    <a href="#security-modules" class="btn btn-outline-light btn-sm nav-link-custom">Volver a módulos</a>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="glass-card p-4 h-100">
+                            <h5 class="text-accent mb-3">Consentimientos y portabilidad</h5>
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                <button id="consent-mini" class="btn btn-accent-sm">Toggle Consent</button>
+                                <button id="export-personal-mini" class="btn btn-accent-sm">Exportar JSON</button>
+                                <button id="anonymize-mini" class="btn btn-accent-sm">Derecho al Olvido</button>
+                            </div>
+                            <pre id="privacy-log-mini" class="mono text-light mb-0"></pre>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="glass-card p-4 h-100">
+                            <h5 class="text-accent mb-3">Principios de tratamiento</h5>
+                            <ul class="text-light small mb-0 ps-3">
+                                <li>Consentimiento consciente y revocable</li>
+                                <li>Portabilidad en formatos JSON y PDF</li>
+                                <li>Anonimización con marca USER_DELETED_XXXX</li>
+                                <li>Integridad referencial y trazabilidad</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="module-whistle" class="module-page py-5 view-section d-none">
+        <div class="container">
+            <div class="glass-card p-4 p-md-5">
+                <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4">
+                    <div>
+                        <span class="badge badge-ethic mb-2">Ethical reporting</span>
+                        <h2 class="text-white mb-1">Canal de Denuncias Anónimo</h2>
+                    </div>
+                    <a href="#security-modules" class="btn btn-outline-light btn-sm nav-link-custom">Volver a módulos</a>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-7">
+                        <div class="glass-card p-4 h-100">
+                            <textarea id="whistle-text-mini" rows="6" class="glass-input" placeholder="Describe la denuncia o la conducta que deseas reportar..."></textarea>
+                            <button id="whistle-send-mini" class="btn btn-accent-sm mt-3">Enviar Anónimo</button>
+                            <pre id="whistle-result-mini" class="mono text-light mt-3 mb-0"></pre>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="glass-card p-4 h-100">
+                            <h5 class="text-accent mb-3">Protección del denunciante</h5>
+                            <ul class="text-light small mb-0 ps-3">
+                                <li>Sin registro de IP ni sesión</li>
+                                <li>Seguimiento por hash y código de rastreo</li>
+                                <li>Envío cifrado con trazabilidad legal</li>
+                                <li>Procesamiento controlado por comité ético</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="module-sign" class="module-page py-5 view-section d-none">
+        <div class="container">
+            <div class="glass-card p-4 p-md-5">
+                <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4">
+                    <div>
+                        <span class="badge badge-ethic mb-2">Digital trust</span>
+                        <h2 class="text-white mb-1">Firma Digital e Integridad de Contratos</h2>
+                    </div>
+                    <a href="#security-modules" class="btn btn-outline-light btn-sm nav-link-custom">Volver a módulos</a>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-7">
+                        <div class="glass-card p-4 h-100">
+                            <textarea id="contract-text-mini" rows="5" class="glass-input">Acuerdo de confidencialidad y gobernanza digital...</textarea>
+                            <button id="sign-contract-mini" class="btn btn-accent-sm mt-3">Firmar contrato</button>
+                            <pre id="sign-result-mini" class="mono text-light mt-3 mb-0"></pre>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="glass-card p-4 h-100">
+                            <h5 class="text-accent mb-3">Aseguramiento de acuerdo</h5>
+                            <ul class="text-light small mb-0 ps-3">
+                                <li>Hash SHA-256 por documento</li>
+                                <li>Sellado de tiempo para trazabilidad</li>
+                                <li>Integridad del acuerdo y NDAs</li>
+                                <li>Validación legal y operativa</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="module-dashboard" class="module-page py-5 view-section d-none">
+        <div class="container">
+            <div class="glass-card p-4 p-md-5">
+                <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4">
+                    <div>
+                        <span class="badge badge-ethic mb-2">Executive view</span>
+                        <h2 class="text-white mb-1">Dashboard Ejecutivo</h2>
+                    </div>
+                    <a href="#security-modules" class="btn btn-outline-light btn-sm nav-link-custom">Volver a módulos</a>
+                </div>
+
+                <div class="row g-4 mb-4">
+                    <div class="col-md-4">
+                        <div class="glass-card p-4 text-center h-100">
+                            <div class="text-accent fs-2 fw-bold" id="metric-users-mini">0</div>
+                            <small class="text-light">Usuarios activos</small>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="glass-card p-4 text-center h-100">
+                            <div class="text-accent fs-2 fw-bold" id="metric-peak-mini">0</div>
+                            <small class="text-light">Hora pico</small>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="glass-card p-4 text-center h-100">
+                            <div class="text-accent fs-2 fw-bold" id="metric-volume-mini">0</div>
+                            <small class="text-light">Volumen transaccional</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-4">
+                    <h5 class="text-accent mb-3">Indicadores clave</h5>
+                    <ul class="text-light small mb-0 ps-3">
+                        <li>Disponibilidad de servicios y tiempos de respuesta</li>
+                        <li>Riesgo por incidentes, accesos no autorizados y alertas</li>
+                        <li>Volumen de respaldos, usuarios activos y continuidad</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="module-backup" class="module-page py-5 view-section d-none">
+        <div class="container">
+            <div class="glass-card p-4 p-md-5">
+                <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4">
+                    <div>
+                        <span class="badge badge-ethic mb-2">Continuity</span>
+                        <h2 class="text-white mb-1">Backup Center</h2>
+                    </div>
+                    <a href="#security-modules" class="btn btn-outline-light btn-sm nav-link-custom">Volver a módulos</a>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="glass-card p-4 h-100">
+                            <h5 class="text-accent mb-3">Programación y restauración</h5>
+                            <label class="d-block mb-3">Intervalo seg: <input id="backup-interval-mini" type="number" value="0" style="width:80px" class="glass-input d-inline-block ms-2"></label>
+                            <button id="backup-run-mini" class="btn btn-accent-sm">Respaldar ahora</button>
+                            <div id="backup-log-mini" class="mono text-light mt-3 mb-0"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="glass-card p-4 h-100">
+                            <h5 class="text-accent mb-3">Objetivos de continuidad</h5>
+                            <ul class="text-light small mb-0 ps-3">
+                                <li>RTO y RPO definidos por prioridad de servicio</li>
+                                <li>Validación de integridad antes del cierre</li>
+                                <li>Restauración con trazabilidad completa</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="module-api" class="module-page py-5 view-section d-none">
+        <div class="container">
+            <div class="glass-card p-4 p-md-5">
+                <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4">
+                    <div>
+                        <span class="badge badge-ethic mb-2">Integration</span>
+                        <h2 class="text-white mb-1">API Keys / Webhooks</h2>
+                    </div>
+                    <a href="#security-modules" class="btn btn-outline-light btn-sm nav-link-custom">Volver a módulos</a>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="glass-card p-4 h-100">
+                            <h5 class="text-accent mb-3">Generación de credenciales</h5>
+                            <label class="d-block mb-3">Nombre: <input id="api-name-mini" class="glass-input mt-1" style="width:100%"></label>
+                            <label class="d-block mb-3">Permisos: <select id="api-perm-mini" multiple class="glass-input mt-1"><option value="read">Read</option><option value="write">Write</option><option value="admin">Admin</option></select></label>
+                            <button id="api-gen-mini" class="btn btn-accent-sm">Generar Key</button>
+                            <pre id="api-result-mini" class="mono text-light mt-3 mb-0"></pre>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="glass-card p-4 h-100">
+                            <h5 class="text-accent mb-3">Criterios de control</h5>
+                            <ul class="text-light small mb-0 ps-3">
+                                <li>Scopes mínimos por integración</li>
+                                <li>Rotación y expiración automática</li>
+                                <li>Webhook con firma y validación HMAC</li>
+                                <li>Monitoreo y revocación por uso anómalo</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- FOOTER GENERAL -->
 <footer class="site-footer glassmorphism">
   <div class="footer-container">
-    <!-- Columna 1: Info Marca -->
     <div class="footer-brand">
-      <h3 class="footer-title">TuMarca</h3>
-      <p>Transformando ideas en soluciones digitales innovadoras y de alto impacto.</p>
+      <h3 class="footer-title">SentinelEthos Tech</h3>
+      <p>Protección perimetral y gobernanza digital con enfoque ético, transparente y respetuoso de la privacidad humana.</p>
       <div class="social-links">
-        <a href="#" aria-label="Facebook" class="social-icon">FB</a>
-        <a href="#" aria-label="Twitter" class="social-icon">X</a>
-        <a href="#" aria-label="LinkedIn" class="social-icon">IN</a>
-        <a href="#" aria-label="GitHub" class="social-icon">GH</a>
+        <a href="#" aria-label="Facebook" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" aria-label="LinkedIn" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" aria-label="GitHub" class="social-icon"><i class="fa-brands fa-github"></i></a>
       </div>
     </div>
 
-    <!-- Columna 2: Enlaces Rápidos -->
     <div class="footer-links">
       <h4>Navegación</h4>
       <ul>
@@ -780,10 +1448,10 @@ if (feature.isKeylogger() || feature.capturesScreen()) {
         <li><a href="#servicios" class="nav-link-custom">Servicios</a></li>
         <li><a href="#compromiso" class="nav-link-custom">Compromiso</a></li>
         <li><a href="#contacto-page" class="nav-link-custom">Contacto</a></li>
+        <li><a href="ayuda.html" class="nav-link-custom">Manual</a></li>
       </ul>
     </div>
 
-    <!-- Columna 3: Legal -->
     <div class="footer-links">
       <h4>Legal</h4>
       <ul>
@@ -793,19 +1461,18 @@ if (feature.isKeylogger() || feature.capturesScreen()) {
       </ul>
     </div>
 
-    <!-- Columna 4: Boletín / Contacto -->
     <div class="footer-newsletter">
       <h4>Suscríbete</h4>
-      <p>Recibe las últimas novedades directamente en tu correo.</p>
+      <p>Recibe actualizaciones sobre seguridad, privacidad y soberanía digital.</p>
       <form class="newsletter-form" onsubmit="event.preventDefault();">
         <input type="email" placeholder="Tu correo electrónico" required class="glass-input">
-        <button type="submit" class="btn-glass">Enviar</button>
+        <button type="submit" class="btn btn-accent-sm">Enviar</button>
       </form>
     </div>
   </div>
 
   <div class="footer-bottom">
-    <p>&copy; 2026 TuMarca. Todos los derechos reservados.</p>
+    <p>&copy; 2026 SentinelEthos Tech. Todos los derechos reservados.</p>
   </div>
 </footer>
 
